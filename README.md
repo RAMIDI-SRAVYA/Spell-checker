@@ -32,3 +32,21 @@ The code requires the following installatins to run.
 - pip install pyenchant
 - pip install datetime
 - pip install csv-reader
+
+The code requires the following supporting files to run.
+- abbreviations.pickle
+- one_word_descriptions.pickle
+- phrases.pickle
+- word_synonymlist.pickle
+- QA_corpus.csv
+
+Below are the flow diagram files:
+- Sequence diagram
+- Training-time flow
+- Inference-time flow
+- Data model
+
+The code generates the following files as part of its training flow execution.
+- words_set.pickle
+- corpus.txt
+
