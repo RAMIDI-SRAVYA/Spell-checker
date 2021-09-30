@@ -1,0 +1,12 @@
+#https://www.websequencediagrams.com/
+
+title Spell checker - inference flow
+
+user->spell_check: wrongly spelt word
+spell_check->words_set: checks incorrect word in corpus set of words
+words_set->standard_dict: checks the word in standard dictionary if the word is not found in words_set
+standard_dict->corpus_txt: if word is not found in standard_dict
+corpus_txt->spell_check: suggests a corrected word
+corpus_txt->standard_dict: if no suggestion is found from corpus_txt
+standard_dict->spell_check: suggests a corrected word
+spell_check->user: mispelled word is corrected
