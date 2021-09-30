@@ -1,0 +1,15 @@
+#https://www.websequencediagrams.com/
+
+title Spell checker
+
+user->QA_corpus_csv: Questions Answers csv file
+QA_corpus_csv->words_set: phrases, synonyms, one word descriptions, abbreviations
+words_set->corpus_txt: encoding
+
+user->spell_check: wrongly spelt word
+spell_check->words_set: checks incorrect word in corpus set of words_set
+words_set->standard_dict: checks the word in standard dictionary if the word is not found in words_set
+standard_dict->corpus_txt: if word is not found in standard_dict
+corpus_txt->standard_dict: if no suggestion is found from corpus_txt
+standard_dict->spell_check: corrected word
+spell_check->user: mispelled word is corrected
