@@ -1,0 +1,16 @@
+//https://dbdiagram.io/d
+
+//// -- Tables and References
+
+// Creating tables
+Table QA_corpus {
+  id int // auto-increment
+  question varchar
+  response varchar
+}
+
+//This is a NLP project
+//And hence only one table - "QA_corpus"
+//corpus_txt is a text file 
+//words_set is a pickle file
+//standard_dict is loaded at the time of execuiton by enchant package
