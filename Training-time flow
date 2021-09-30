@@ -1,0 +1,7 @@
+#https://www.websequencediagrams.com/
+
+title Spell checker - training flow
+
+user->QA_corpus_csv: Questions Answers csv file
+QA_corpus_csv->words_set: phrases, synonyms, one word descriptions, abbreviations
+words_set->corpus_txt: encoding
